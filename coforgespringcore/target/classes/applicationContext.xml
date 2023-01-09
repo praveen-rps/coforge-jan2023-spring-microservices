@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<!-- bean definitions here -->
+<!-- 
+	<bean name="emp1" class="coforgespringcore.Employee">
+		<property name="empid" value="10001" />
+		<property name="dept" value="Quality" />
+		<property name="name" value="Praveen" />
+	</bean>
+	
+	<bean name="emp2" class="coforgespringcore.Employee">
+		<property name="empid" value="9001" />
+		<property name="dept" value="Finance" />
+		<property name="name" value="Kumar" />
+	</bean>
+	
+	-->
+	
+	<bean name="emp3" class="coforgespringcore.Employee">
+		<constructor-arg value="9999" />
+		<constructor-arg value="Sales" />
+		<constructor-arg value="John" />
+	</bean>
+	
+	
+	
+	
+
+</beans>

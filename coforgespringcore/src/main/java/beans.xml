@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="address1" class="coforgespringcore.Address"> 
+		<property name="dno" value="302" />
+		<property name="street" value="MG Road" />
+		<property name="city" value="Bangalore" />
+		
+	</bean>
+	
+	
+	<bean id="address2" class="coforgespringcore.Address"> 
+		<property name="dno" value="666" />
+		<property name="street" value="Mahe" />
+		<property name="city" value="Mumbai" />
+		
+	</bean>
+	
+<!-- 
+	<bean id="student" class="coforgespringcore.Student" autowire="byName"> 
+		<constructor-arg value="302" />
+		<constructor-arg value="MG Road" />
+		<constructor-arg ref="address2" />
+	
+	</bean> -->
+
+	
+	<bean id="student" class="coforgespringcore.Student" autowire="byName"> 
+		<property name="htno" value="302" />
+		<property name="name" value="MG Road" />
+		<property name="address" ref="address1" />
+	</bean>
+
+
+</beans>
