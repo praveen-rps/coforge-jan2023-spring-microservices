@@ -1,3 +1,99 @@
 spring.main.web-application-type=none
 
 
+https://app.mymapit.in/code4/tiny/HjJpou
+
+https://github.com/praveen-rps/coforge-jan2023-spring-microservices.git
+
+
+
+
+
+Spring
+------
+
+class Employee{
+	int empid;
+	String name;
+	String dept;
+	//setter and getter methods
+	// constructors;
+	// toString();
+}
+
+Employee emp = new Employee();
+
+sop(emp); // null values
+manualy assign the values
+
+setter Methods we can assign values to it
+
+
+
+1. loading the driver
+2. getting the connection
+3. creating the statment
+4. executing the query on the statement
+5. feteching the results.
+6. processing the values
+7. closing the objects
+
+
+
+The process of injecting dependent objects -- DI
+
+Spring Container is represented in the form of interface called ApplicationContext
+
+
+
+
+ClassPathXmlApplicationContext
+FileSystemXmlApplicationContext
+XmlWebApplicationContext
+
+---------------------------------------------------
+AnnotationConfigApplicationContext
+
+class Employee{
+	int empid;
+	String name;
+	String dept;
+	//setter and getter methods
+	// constructors;
+	// toString();
+}
+
+3 ways
+------
+1. xml file format   --- 
+
+2. java classes      --- java
+
+
+3. Java Annotations  ---- Annotations  (@Override)
+
+
+Autowiring:
+-----------
+It is the process of automatically injecting the required values.
+
+
+byName
+byType
+ref
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
