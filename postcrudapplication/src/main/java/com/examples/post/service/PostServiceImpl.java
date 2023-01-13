@@ -1,6 +1,7 @@
 package com.examples.post.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,5 +27,25 @@ public class PostServiceImpl implements PostService {
 		// TODO Auto-generated method stub
 		return dao.save(post);
 	}
+
+	@Override
+	public List<Post> findAllPostsByTitle(String title) {
+		// TODO Auto-generated method stub
+		return dao.findByTitle(title);
+	}
+
+	@Override
+	public Optional<Post> findByPostId(String pid) {
+		// TODO Auto-generated method stub
+		return dao.findById(pid);
+	}
+
+	@Override
+	public List<Post> findByOthers(String author, String title) {
+		// TODO Auto-generated method stub
+		return dao.getPostsByAuthorNTitle(author, title);
+	}
+
+	
 
 }

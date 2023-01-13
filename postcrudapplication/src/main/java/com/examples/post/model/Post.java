@@ -5,14 +5,16 @@ import org.hibernate.annotations.Table;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 
 @Entity
 @Table(appliesTo = "post")
+
 public class Post {
 	
 	
 	@Id
-	int pid;
+	String pid;
 	
 	@Column(name="author")
 	String author;
@@ -26,7 +28,7 @@ public class Post {
 		
 	}
 	
-	public Post(int pid, String author, String title, String description) {
+	public Post(String pid, String author, String title, String description) {
 		super();
 		this.pid = pid;
 		this.author = author;
@@ -35,11 +37,11 @@ public class Post {
 	}
 
 
-	public int getPid() {
+	public String getPid() {
 		return pid;
 	}
 
-	public void setPid(int pid) {
+	public void setPid(String pid) {
 		this.pid = pid;
 	}
 
