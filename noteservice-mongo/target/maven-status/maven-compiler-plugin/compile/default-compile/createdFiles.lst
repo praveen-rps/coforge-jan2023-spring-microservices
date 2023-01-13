@@ -1,0 +1,8 @@
+com\microservices\notes\controller\B.class
+com\microservices\notes\service\NoteServiceImpl.class
+com\microservices\notes\dao\NotesDao.class
+com\microservices\notes\service\NoteService.class
+com\microservices\notes\controller\NotesController.class
+com\microservices\notes\NoteserviceMongoApplication.class
+com\microservices\notes\entity\Notes.class
+com\microservices\notes\controller\A.class

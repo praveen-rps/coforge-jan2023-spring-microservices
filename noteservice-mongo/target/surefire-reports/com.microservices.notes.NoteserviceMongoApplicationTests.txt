@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.microservices.notes.NoteserviceMongoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.576 s - in com.microservices.notes.NoteserviceMongoApplicationTests
