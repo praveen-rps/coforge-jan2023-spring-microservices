@@ -1,0 +1,47 @@
+1. docker --version  -- To view the docker version installed
+
+2. docker images    -- to list all the images
+
+3. docker ps   --- to list all the running containers
+
+4. docker ps -a   -- to list all the containers including stopped
+
+5. docker run -d --p 8081:8080 --name <containername> <imagename>  // to run the image in a new container.
+
+6. docker exec -it <containername> /bin/bash   // to move inside the container
+   to exit from the container type exit command
+
+7. docker start <containername>  // to start a stopped container
+
+8. docker stop <contianername>  // to stop the running container.
+
+9. docker pull <imagename>  // to pull the image from the docker hub
+
+10.  docker rm <containername>  // to remove the given container
+
+11. docker rmi <imagename>    // to remove  the given image.
+
+
+
+docker pull python
+
+docker pull jenkins/jenkins
+
+
+
+Create a dockerfile and type the below commands
+-----------------------------------------------
+to create a docker file open notepad and save this with "Dockerfile" 
+
+FROM openjdk
+ADD dockerdemo.jar /
+EXPOSE 8080:8090
+CMD ["java","-jar","dockerdemo.jar"]
+
+
+12. docker build .  // to create an docker image from the dockerfile
+
+
+
+
+
