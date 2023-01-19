@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.examples.security.DockerdemoprojectApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.21 s - in com.examples.security.DockerdemoprojectApplicationTests
